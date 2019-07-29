@@ -2,11 +2,11 @@ import { evenOnly, plusOne, replace, group, validate, sumEven } from '.';
 
 describe('Array functions', () => {
   it('evenOnly returns only the even numbers', () => {
-    expect(evenOnly([1,2,3,4])).toEqual([2,4]);
-    expect(evenOnly([11,13,15])).toEqual([]);
+    expect(evenOnly([1, 2, 3, 4])).toEqual([2, 4]);
+    expect(evenOnly([11, 13, 15])).toEqual([]);
   });
   it('plusOne adds one to every element on the list', () => {
-    expect(plusOne([1, 2, 3])).toEqual([2,3,4]);
+    expect(plusOne([1, 2, 3])).toEqual([2, 3, 4]);
     expect(plusOne([-1, 99])).toEqual([0, 100]);
   });
   it('replace can change any element to a certain value', () => {
