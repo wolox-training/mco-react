@@ -1,0 +1,25 @@
+.book-details {
+  p {
+    display: block;
+    padding: 5px;
+  }
+  span {
+    color: grey;
+  }
+}
+
+.book-title {
+  padding: 5px 5px 10px;
+}
+
+#title-genre {
+  color: grey;
+  font-weight: bold;
+}
+
+.title {
+  color: black;
+  font-weight: bold;
+  font-size: large;
+  margin-right: 10px;
+}
