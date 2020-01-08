@@ -1,15 +1,16 @@
 .book-details {
   p {
     display: block;
-    padding: 12px;
+    padding: 12px 0 5px 0 ;
   }
   span {
     color: grey;
   }
+  padding-top: 20px;
 }
 
 .book-title {
-  padding: 5px 5px 20px;
+  padding: 0px 0px 15px 0;
 }
 
 #title-genre {
@@ -26,11 +27,20 @@
 
 .book-card {
   .book-image {
-    max-width: 35%;
+    max-width: 30%;
+  }
+  .book {
+    hr {
+      border: 2px solid $sulu-green;
+    }
+    flex-grow: 1;
+    padding: 5px 5px 5px 20px;
   }
   display: flex;
   flex-flow: row;
-  justify-content: space-around;
-  max-width: 500px;
+  justify-content: flex-start;
+  max-width: 600px;
   margin: 5px;
+  box-shadow: 5px 5px 10px grey;
+  padding: 10px;
 }
