@@ -1,10 +1,12 @@
 .book-details {
-  p {
+  .book-item {
     display: block;
     padding: 12px 0 5px 0 ;
+    font-size: $font-normal;
   }
-  span {
-    color: grey;
+  .book-item-span {
+    color: $grey;
+    font-size: $font-normal;
   }
   padding-top: 20px;
 }
@@ -14,14 +16,15 @@
 }
 
 #title-genre {
-  color: grey;
+  color: $grey;
   font-weight: bold;
+  font-size: $font-large;
 }
 
 .title {
-  color: black;
+  color: $black;
   font-weight: bold;
-  font-size: large;
+  font-size: $font-extra-large;
   margin-right: 10px;
 }
 
