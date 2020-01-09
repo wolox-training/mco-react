@@ -2,9 +2,11 @@
   .book-item {
     display: block;
     padding: 5px;
+    font-size: $font-normal;
   }
   .book-item-span {
     color: $grey;
+    font-size: $font-normal;
   }
 }
 
@@ -15,11 +17,12 @@
 #title-genre {
   color: $grey;
   font-weight: bold;
+  font-size: $font-large;
 }
 
 .title {
   color: $black;
   font-weight: bold;
-  font-size: $font-large;
+  font-size: $font-extra-large;
   margin-right: 10px;
 }
