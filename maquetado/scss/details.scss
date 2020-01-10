@@ -4,6 +4,7 @@
     padding: 12px 0 5px 0 ;
     font-size: $font-normal;
   }
+  
   .book-item-span {
     color: $grey;
     font-size: $font-normal;
@@ -12,13 +13,12 @@
 }
 
 .book-title {
-  padding: 0px 0px 15px 0;
-}
-
-#title-genre {
-  color: $grey;
-  font-weight: bold;
-  font-size: $font-large;
+  .title-genre {
+    color: $grey;
+    font-weight: bold;
+    font-size: $font-large;
+  }
+  padding: 24px 5px 10px;
 }
 
 .title {
@@ -37,12 +37,15 @@
       border: 2px solid $sulu-green;
     }
     flex-grow: 1;
-    padding: 5px 5px 5px 20px;
+    max-width: 261px;
+    max-height: 368px;
+    padding: 24px;
   }
   display: flex;
   flex-flow: row;
   justify-content: flex-start;
-  max-width: 600px;
+  max-width: 900px;
+  max-height: 416px;
   margin: 5px;
   box-shadow: 5px 5px 10px grey;
   padding: 10px;
