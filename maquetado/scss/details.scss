@@ -1,52 +1,56 @@
-.book-details {
-  .book-item {
-    display: block;
-    padding: 12px 0 5px 0 ;
-    font-size: $font-normal;
-  }
-  
-  .book-item-span {
-    color: $grey;
-    font-size: $font-normal;
-  }
-  padding-top: 20px;
-}
-
-.book-title {
-  .title-genre {
-    color: $grey;
-    font-weight: bold;
-    font-size: $font-large;
-  }
-  padding: 24px 5px 10px;
-}
-
-.title {
-  color: $black;
-  font-weight: bold;
-  font-size: $font-extra-large;
-  margin-right: 10px;
-}
-
 .book-card {
   .book-image {
-    max-width: 30%;
-  }
-  .book {
-    hr {
-      border: 2px solid $sulu-green;
-    }
-    flex-grow: 1;
-    max-width: 261px;
-    max-height: 368px;
+    max-width: 309px;
+    max-height: 416px;
     padding: 24px;
   }
+
+  .book {
+    .book-details {
+      .book-item {
+        display: block;
+        padding: 36px 0 0 0 ;
+        font-size: $font-normal;
+      }
+      
+      .book-item-span {
+        color: $grey;
+        font-size: $font-normal;
+      }
+    }
+    
+    .book-title {
+      .title-genre {
+        color: $grey;
+        font-weight: bold;
+        font-size: $font-large;
+      }
+
+      .title {
+        color: $black;
+        font-weight: bold;
+        font-size: $font-extra-large;
+      }
+
+      padding: 0px 8px 12px 0px;
+    }
+
+    .book-separator {
+      border: 2px solid $sulu-green;
+    }
+
+    flex-grow: 1;
+    max-width: 588px;
+    max-height: 368px;
+    padding: 24px 24px 0px 24px;
+  }
+
   display: flex;
   flex-flow: row;
   justify-content: flex-start;
   max-width: 900px;
   max-height: 416px;
   margin: 5px;
-  box-shadow: 5px 5px 10px grey;
-  padding: 10px;
+  box-shadow: 5px 5px 10px $grey;
+  font-family: 'Roboto', sans-serif;
 }
