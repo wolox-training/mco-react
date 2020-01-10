@@ -17,7 +17,7 @@
     font-weight: bold;
     font-size: $font-large;
   }
-  padding: 5px 5px 10px;
+  padding: 24px 5px 10px;
 }
 
 .title {
@@ -29,11 +29,14 @@
 
 .book-card {
   .book-image {
-    max-width: 35%;
+    max-width: 261px;
+    max-height: 368px;
+    padding: 24px;
   }
   display: flex;
   flex-flow: row;
-  justify-content: space-around;
-  max-width: 500px;
+  justify-content: flex-start;
+  max-width: 900px;
+  max-height: 416px;
   margin: 5px;
 }
