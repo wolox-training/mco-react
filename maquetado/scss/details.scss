@@ -4,6 +4,7 @@
     padding: 12px;
     font-size: $font-normal;
   }
+  
   .book-item-span {
     color: $grey;
     font-size: $font-normal;
@@ -11,13 +12,12 @@
 }
 
 .book-title {
-  padding: 5px 5px 20px;
-}
-
-#title-genre {
-  color: $grey;
-  font-weight: bold;
-  font-size: $font-large;
+  .title-genre {
+    color: $grey;
+    font-weight: bold;
+    font-size: $font-large;
+  }
+  padding: 5px 5px 10px;
 }
 
 .title {
