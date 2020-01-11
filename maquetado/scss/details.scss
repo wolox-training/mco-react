@@ -1,11 +1,18 @@
 .book-card {
-  .book-image {
-    max-width: 309px;
-    max-height: 416px;
-    padding: 24px;
-  }
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  max-width: 900px;
+  max-height: 416px;
+  margin: 5px;
+  box-shadow: 5px 5px 10px $grey;
+  font-family: 'Roboto', sans-serif;
 
   .book {
+    max-width: 588px;
+    max-height: 368px;
+    padding: 24px 24px 0px 24px;
+    flex-grow: 1;
     .book-details {
       .book-item {
         display: block;
@@ -20,6 +27,8 @@
     }
     
     .book-title {
+      padding: 0px 8px 12px 0px;
+
       .title-genre {
         color: $grey;
         font-weight: bold;
@@ -31,26 +40,29 @@
         font-weight: bold;
         font-size: $font-extra-large;
       }
-
-      padding: 0px 8px 12px 0px;
     }
 
     .book-separator {
       border: 2px solid $sulu-green;
     }
-
-    flex-grow: 1;
-    max-width: 588px;
-    max-height: 368px;
-    padding: 24px 24px 0px 24px;
   }
 
-  display: flex;
-  flex-flow: row;
-  justify-content: flex-start;
-  max-width: 900px;
-  max-height: 416px;
-  margin: 5px;
-  box-shadow: 5px 5px 10px $grey;
-  font-family: 'Roboto', sans-serif;
+  .book-cover {
+    position: relative;
+
+    .book-image {
+      max-width: 309px;
+      max-height: 416px;
+      padding: 24px;
+    }
+
+    .book-badge {
+      position: absolute;
+      max-height: 118.57px;
+      max-width: 94.53px;
+      transform: rotate(15deg);
+      top: 0;
+      right: 0;
+    }
+  }
 }
