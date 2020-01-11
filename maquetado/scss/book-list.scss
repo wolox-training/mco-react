@@ -1,0 +1,39 @@
+.book-list {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1366px;
+  max-height: 768px;
+  width: 1366px;
+  height: 768px;
+  align-items: center;
+  padding: 11.32% 15.73% 1.04% 15.73%;
+}
+
+.book-item-list {
+  max-width: 198px;
+  max-height: 300px;
+  box-shadow: 4px 4px 10px $black-russian;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 18px;
+
+  .book-image-mini{
+    max-width: 198px;
+    max-height: 240px;
+    padding: 28px 28px 12px 28px;
+  }
+
+  .book-title-small{
+    font-size: $font-small;
+    font-weight: bold;
+    color: $black;
+    padding: 0 28px 8px 28px;
+  }
+
+  .book-span-small{
+    font-size: $font-very-small;
+    color: $grey;
+    padding: 0 28px 23px 28px;
+  }
+}
