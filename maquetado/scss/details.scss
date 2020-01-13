@@ -1,0 +1,28 @@
+.book-details {
+  .book-item {
+    display: block;
+    padding: 5px;
+    font-size: $font-normal;
+  }
+  
+  .book-item-span {
+    color: $grey;
+    font-size: $font-normal;
+  }
+}
+
+.book-title {
+  .title-genre {
+    color: $grey;
+    font-weight: bold;
+    font-size: $font-large;
+  }
+  padding: 5px 5px 10px;
+}
+
+.title {
+  color: $black;
+  font-weight: bold;
+  font-size: $font-extra-large;
+  margin-right: 10px;
+}
