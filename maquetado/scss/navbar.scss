@@ -1,0 +1,38 @@
+.navbar {
+  display: flex;
+  max-width: 1366px;
+  width: 1366px;
+  max-height: 70px;
+  flex-direction: column;
+  box-shadow: 0 4px 10px $black-russian;
+  position: fixed;
+  background-color: $white;
+
+  .navbar-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 64px;
+    max-height: 64px;
+
+    .wolox-logo {
+      max-width: 212.42px;
+      max-height: 70px;
+      align-self: center;
+    }
+
+    .logout {
+      align-self: center;
+      font-size: $font-small;
+    }
+  }
+
+  .navbar-line-header {
+    width: 1366px;
+    height: 6px;
+    max-height: 6px;
+    align-self: flex-start;
+    background-color: $cerulean;
+    border: 2px solid $cerulean;
+  }
+}
