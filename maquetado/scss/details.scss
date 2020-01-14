@@ -22,13 +22,13 @@
     flex-grow: 1;
     max-height: 368px;
     max-width: 588px;
-    padding: 24px 24px 0px 24px;
+    padding: 24px 24px 0;
 
-    .book-details {
+    .book-details {    
       .book-item {
         display: block;
         font-size: $font-normal;
-        padding: 36px 0 0 0 ;
+        padding-top: 36px;
       }
       
       .book-item-span {
@@ -38,7 +38,7 @@
     }
     
     .book-title {
-      padding: 0px 8px 12px 0px;
+      padding: 0 8px 12px 0;
 
       .title-genre {
         color: $grey;
