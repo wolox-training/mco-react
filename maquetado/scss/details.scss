@@ -24,11 +24,13 @@
     max-width: 588px;
     padding: 24px 24px 0;
 
-    .book-details {    
+    .book-details {
+      padding-top: 36px;
+        
       .book-item {
         display: block;
         font-size: $font-normal;
-        padding-top: 36px;
+        margin-bottom: 36px;
       }
       
       .book-item-span {
