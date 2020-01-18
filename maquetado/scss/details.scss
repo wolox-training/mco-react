@@ -64,8 +64,8 @@
     }
 
     .book-badge {
-      max-height: 118.57px;
-      max-width: 94.53px;
+      max-height: $badge-h;
+      max-width: $badge-w;
       position: absolute;
       right: -24px;
       top: -24px;
@@ -166,8 +166,10 @@
       }
   
       .book-badge {
-        max-height: 118.57px;
-        max-width: 94.53px;
+        max-height: $badge-small-h;
+        max-width: $badge-small-w;
+        height: 100%;
+        width: 100%;
         position: absolute;
         right: 14px;
         top: 4px;
