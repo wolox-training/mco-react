@@ -9,20 +9,12 @@
   max-height: 416px;
   max-width: 900px;
   width: 100%;
-
-  .book-image {
-    height: 100%;
-    max-height: 416px;
-    max-width: 309px;
-    padding: 24px;
-    width: 100%;
-  }
+  padding: 24px;
 
   .book {
     flex-grow: 1;
     max-height: 368px;
     max-width: 588px;
-    padding: 24px 24px 0;
 
     .book-details {
       padding-top: 36px;
@@ -57,6 +49,27 @@
 
     .book-separator {
       border: 2px solid $sulu-green;
+    }
+  }
+
+  .book-cover {
+    position: relative;
+    margin-right: 52px;
+
+    .book-image {
+      height: 100%;
+      max-height: 416px;
+      max-width: 309px;
+      width: 100%;
+    }
+
+    .book-badge {
+      max-height: 119px;
+      max-width: 95px;
+      position: absolute;
+      right: -24px;
+      top: -24px;
+      transform: rotate(15deg);
     }
   }
 }
