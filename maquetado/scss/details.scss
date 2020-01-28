@@ -31,8 +31,6 @@
     }
     
     .book-title {
-      padding: 0 8px 12px 0;
-
       .title-genre {
         color: $grey;
         font-size: $font-large;
@@ -44,10 +42,12 @@
         font-size: $font-extra-large;
         font-weight: bold;
       }
-    }
 
-    .book-separator {
-      border: 2px solid $sulu-green;
+      .book-separator {
+        border: 2px solid $sulu-green;
+        margin-top: 12px;
+        width: 100%;
+      }
     }
   }
 
