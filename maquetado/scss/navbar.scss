@@ -1,24 +1,24 @@
 .navbar {
-  display: flex;
-  max-width: 1366px;
-  width: 1366px;
-  max-height: 70px;
-  flex-direction: column;
-  box-shadow: 0 4px 10px $black-russian;
-  position: fixed;
   background-color: $white;
+  box-shadow: 0 4px 10px $black-russian;
+  display: flex;
+  flex-direction: column;
+  max-height: 70px;
+  max-width: 1366px;
+  position: fixed;
+  width: 1366px;
 
   .navbar-content {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     height: 64px;
+    justify-content: space-around;
     max-height: 64px;
 
     .wolox-logo {
-      max-width: 212.42px;
-      max-height: 70px;
       align-self: center;
+      max-height: 70px;
+      max-width: 212.42px;
     }
 
     .logout {
@@ -28,11 +28,9 @@
   }
 
   .navbar-line-header {
-    width: 1366px;
-    height: 6px;
-    max-height: 6px;
     align-self: flex-start;
     background-color: $cerulean;
-    border: 2px solid $cerulean;
+    height: 6px;
+    width: 1366px;
   }
 }
