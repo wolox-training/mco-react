@@ -1,5 +1,5 @@
 .book-card {
-  box-shadow: 5px 5px 10px $grey;
+  box-shadow: 4px 4px 10px $black-russian;
   display: flex;
   flex-flow: row;
   font-family: 'Roboto', sans-serif;
@@ -8,8 +8,8 @@
   margin: 5px;
   max-height: 416px;
   max-width: 900px;
-  width: 100%;
   padding: 24px;
+  width: 100%;
 
   .book {
     flex-grow: 1;
@@ -32,8 +32,6 @@
     }
     
     .book-title {
-      padding: 0 8px 12px 0;
-
       .title-genre {
         color: $grey;
         font-size: $font-large;
@@ -45,16 +43,18 @@
         font-size: $font-extra-large;
         font-weight: bold;
       }
-    }
 
-    .book-separator {
-      border: 2px solid $sulu-green;
+      .book-separator {
+        border: 2px solid $sulu-green;
+        margin-top: 12px;
+        width: 100%;
+      }
     }
   }
 
   .book-cover {
-    position: relative;
     margin-right: 52px;
+    position: relative;
 
     .book-image {
       height: 100%;
