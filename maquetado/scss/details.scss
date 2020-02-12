@@ -73,3 +73,13 @@
     }
   }
 }
+
+.back-arrow::before {
+  content: url('assets/back-arrow-20.png');
+  padding-right: 12px;
+}
+
+.back-arrow {
+  font-size: $font-normal;
+  margin-bottom: 110px;
+}
