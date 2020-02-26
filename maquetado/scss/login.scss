@@ -1,5 +1,6 @@
 .login-container {
   background-color: $wild-sand;
+  border-top: 8px solid $cerulean;
   display: flex;
   flex-flow: column wrap;
   height: 100%;
@@ -7,14 +8,6 @@
   max-height: 400px;
   max-width: 300px;
   width: 100%;
-
-  .login-top {
-    background-color: $cerulean;
-    border: 2px solid $cerulean;
-    height: 100%;
-    max-height: 8px;
-    width: 100%;
-  }
   
   .login-bottom {
     padding: 20px 24px 24px;
@@ -27,9 +20,11 @@
     }
 
     .login-form {
+      border-bottom: 2px solid $grey;
       display: flex;
       flex-flow: column wrap;
       flex-grow: 1;
+      padding-bottom: 16px;
       width: 100%;
 
       .login-label {
@@ -51,6 +46,7 @@
 
       .login-button {
         background-color: $sulu-green;
+        border-bottom: 2px solid $grey;
         border-radius: 5px;
         color: $wild-sand;
         font-size: $font-small;
@@ -59,16 +55,12 @@
       }
     }
 
-    .bottom-decorator {
-      border: 2px solid $grey;
-      margin: 16px 0;
-    }
-
     .sign-up {
       border-radius: 5px;
       border: 2px solid $sulu-green;
       color: $sulu-green;
       font-size: $font-small;
+      margin-top: 16px;
       padding: 8px 0;
       width: 100%;
     }
