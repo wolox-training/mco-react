@@ -7,62 +7,60 @@
   justify-content: center;
   max-height: 400px;
   max-width: 300px;
+  padding: 20px 24px 24px;
   width: 100%;
-  
-  .login-bottom {
-    padding: 20px 24px 24px;
 
-    .wolox-logo {
-      height: 70px;
-      max-height: 100%;
-      max-width: 212.42px;
-      width: 100%;
-    }
+  .wolox-logo {
+    height: 70px;
+    max-height: 100%;
+    max-width: 212px;
+    width: 100%;
+  }
 
-    .login-form {
-      border-bottom: 2px solid $grey;
-      display: flex;
-      flex-flow: column wrap;
-      flex-grow: 1;
-      padding-bottom: 16px;
-      width: 100%;
+  .login-form {
+    border-bottom: 2px solid $grey;
+    display: flex;
+    flex-flow: column wrap;
+    flex-grow: 1;
+    margin-top: 16px;
+    padding-bottom: 16px;
+    width: 100%;
 
-      .login-label {
-        font-size: $font-small;
-        margin-bottom: 8px;
-      } 
-
-      .input-form {
-        background-color: $white;
-        border-radius: 5px;
-        font-size: $font-small;
-        height: 100%;
-        margin-bottom: 16px;
-        max-height: 32px;
-        max-width: 252px;
-        padding: 8px 0;
-        width: 100%;
-      }
-
-      .login-button {
-        background-color: $sulu-green;
-        border-bottom: 2px solid $grey;
-        border-radius: 5px;
-        color: $wild-sand;
-        font-size: $font-small;
-        margin-top: 8px;
-        padding: 8px 0;
-      }
-    }
-
-    .sign-up {
-      border-radius: 5px;
-      border: 2px solid $sulu-green;
-      color: $sulu-green;
+    .login-label {
       font-size: $font-small;
-      margin-top: 16px;
+      margin-bottom: 8px;
+    } 
+
+    .input-form {
+      background-color: $white;
+      border-radius: 5px;
+      font-size: $font-small;
+      height: 100%;
+      margin-bottom: 16px;
+      max-height: 32px;
+      max-width: 252px;
       padding: 8px 0;
       width: 100%;
     }
+
+    .login-button {
+      background-color: $sulu-green;
+      border-bottom: 2px solid $grey;
+      border-radius: 5px;
+      color: $wild-sand;
+      font-size: $font-small;
+      margin-top: 8px;
+      padding: 8px 0;
+    }
+  }
+
+  .sign-up {
+    border-radius: 5px;
+    border: 2px solid $sulu-green;
+    color: $sulu-green;
+    font-size: $font-small;
+    padding: 4px 0;
+    margin-top: 16px;
+    width: 100%;
   }
 }
