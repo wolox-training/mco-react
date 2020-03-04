@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logoWolox from './assets/LogoWolox.png';
 import './application.css';
+import PropTypes from 'prop-types';
 
 class App extends Component {
   state = {
@@ -58,6 +59,12 @@ class App extends Component {
   }
 }
 
-
+App.propTypes = {
+  name: PropTypes.string,
+  lastname: PropTypes.string,
+  password: PropTypes.string,
+  password_confirm: PropTypes.string,
+  email: PropTypes.string
+}
 
 export default App;
