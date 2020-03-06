@@ -20,7 +20,6 @@
       padding-top: 36px;
         
       .book-item {
-        display: block;
         font-size: $font-normal;
         margin-bottom: 36px;
       }
@@ -64,8 +63,8 @@
     }
 
     .book-badge {
-      max-height: 119px;
-      max-width: 95px;
+      max-height: $badge-h;
+      max-width: $badge-w;
       position: absolute;
       right: -24px;
       top: -24px;
@@ -82,4 +81,68 @@
 .back-arrow {
   font-size: $font-normal;
   margin-bottom: 110px;
+}
+
+.back-container {
+  display: flex;
+  height: 100%;
+  justify-content: flex-start;
+  max-height: 416px;
+  max-width: 900px;
+  width: 100%;
+}
+
+.back-arrow-down {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .book-card {
+    flex-flow: column;
+    justify-content: center;
+    max-height: 900px;
+    max-width: 416px;
+  
+    .book {
+      .book-title {
+        padding: 0 8px 12px 0;
+      }
+    }
+  
+    .book-cover {
+      margin-right: 0;
+      padding: 24px;
+  
+      .book-badge {
+        height: 100%;
+        max-height: $badge-small-h;
+        max-width: $badge-small-w;
+        right: 14px;
+        top: 4px;
+        width: 100%;
+      }
+    }
+  }
+
+  .back-arrow-down::before {
+    content: url('assets/back-arrow-20.png');
+    margin-right: 12px;
+  }
+  
+  .back-arrow {
+    display: none;
+  }
+
+  .back-arrow-down {
+    display: flex;
+    font-size: $font-normal;
+  }
+
+  .back-container {
+    justify-content: center;
+    margin-top: 15px;
+    max-height: 900px;
+    max-width: 416px;
+    width: 100%;
+  }
 }
