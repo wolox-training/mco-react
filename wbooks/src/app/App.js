@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logoWolox from './assets/LogoWolox.png';
 import './application.css';
 import PropTypes from 'prop-types';
+import { createUser } from '../services/user';
 
 class App extends Component {
   state = {
@@ -9,10 +10,15 @@ class App extends Component {
     lastname: 'Apellido',
     email: 'example@domain.com',
     password: 'password',
-    password_confirm: 'password'
+    password_confirm: 'password',
+    hasError: false,
+    error: null,
   };
 
   render () {
+    if (this.state.hasError) {
+      return <h1> Something went wrong, sorry. Error: {this.state.error} </h1>
+    }
     return (
       <React.Fragment>
         <div class='sign-up-container'>
@@ -48,7 +54,10 @@ class App extends Component {
         "locale": "en"
       }
     }`
-    console.log(register)
+    createUser(register)
+    .then(res => res.ok === false? this.setState(
+      { hasError: true, error: `${res.problem}\nStatus ${res.status}` }
+      ): null )
     event.preventDefault();
   }
 
