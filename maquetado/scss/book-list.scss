@@ -9,6 +9,8 @@
   width: 100%;
 
   .book-item-list {
+    animation-name: cards;
+    animation-duration: 5s;
     align-items: flex-start;
     box-shadow: 4px 4px 10px $black-russian;
     display: flex;
