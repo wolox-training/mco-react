@@ -23,9 +23,9 @@ class InputForm extends Component {
 }
 
 InputForm.propTypes = {
-  label_name: PropTypes.string,
-  name: PropTypes.string,
-  type: PropTypes.string,
+  label_name: string,
+  name: string,
+  type: string,
 }
 
 export default InputForm;
