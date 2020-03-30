@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { string } from 'prop-types'
 
 class InputForm extends Component {
   state = {
@@ -19,6 +20,12 @@ class InputForm extends Component {
     </div>
     )
   }
+}
+
+InputForm.propTypes = {
+  label_name: string,
+  name: string,
+  type: string,
 }
 
 export default InputForm;
