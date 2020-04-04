@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 import logoWolox from './assets/LogoWolox.png';
 import InputForm from './components/InputForm';
+import { createUser } from '../../../services/user';
 
 class SignUp extends Component {
+  state = {
+    hasError: false,
+    error: null,
+  }
 
   handleSubmit = event => { 
     let inputs = event.target
@@ -17,23 +22,29 @@ class SignUp extends Component {
         "locale": "en"
       }
     }`
-    console.log(register)
+    createUser(register)
+    .then(res => res.ok === false? this.setState(
+      { hasError: true, error: `${res.problem}\nStatus ${res.status}` }
+      ): null )
     event.preventDefault();
   }
 
   render () {
+    if (this.state.hasError) {
+      return <h1> Something went wrong, sorry. Error: {this.state.error} </h1>
+    }
     return (
-      <div class='sign-up-container'>
-        <img class='wolox-logo' src={logoWolox} alt=''/>
-        <form onSubmit={this.handleSubmit} class='sign-up-form' method="post">
+      <div className='sign-up-container'>
+        <img className='wolox-logo' src={logoWolox} alt=''/>
+        <form onSubmit={this.handleSubmit} className='sign-up-form' method="post">
           <InputForm label_name='Nombre' name='firstname' type='input'/>
           <InputForm label_name='Apellido' name='lastname' type='input' />
           <InputForm label_name='Email' name='email' type='email' />
           <InputForm label_name='Password' name='password' type='password' />
           <InputForm label_name='Confirmación de Password' name='password_confirm' type='password' />
-          <button class='sign-up-button' type='submit'>Sign Up</button>
+          <button className='sign-up-button' type='submit'>Sign Up</button>
         </form>
-        <button class='login'>Login</button>
+        <button className='login'>Login</button>
       </div>
     );
   }

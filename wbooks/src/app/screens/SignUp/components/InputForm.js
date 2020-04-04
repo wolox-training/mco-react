@@ -15,8 +15,8 @@ class InputForm extends Component {
   render(){
     return(
     <div>
-        <label class='sign-up-label'>{this.props.label_name}</label>
-        <input class='input-form' type={this.props.type} name={this.props.name} value={this.state.value} onChange={this.handleChange} ></input>
+        <label className='sign-up-label'>{this.props.label_name}</label>
+        <input className='input-form' type={this.props.type} name={this.props.name} value={this.state.value} onChange={this.handleChange} ></input>
     </div>
     )
   }
