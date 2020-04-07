@@ -1,33 +1,32 @@
-.sign-up-container {
+.login-container {
   background-color: $wild-sand;
   border-top: 8px solid $cerulean;
   display: flex;
   flex-flow: column wrap;
   height: 100%;
   justify-content: center;
-  max-height: 700px;
+  max-height: 400px;
   max-width: 300px;
   padding: 20px 24px 24px;
   width: 100%;
 
   .wolox-logo {
-    height: 100%;
-    margin-bottom: 16px;
-    max-height: 70px;
+    height: 70px;
+    max-height: 100%;
     max-width: 212px;
     width: 100%;
   }
 
-  .sign-up-form {
+  .login-form {
     border-bottom: 2px solid $grey;
     display: flex;
     flex-flow: column wrap;
     flex-grow: 1;
-    margin-bottom: 16px;
+    margin-top: 16px;
     padding-bottom: 16px;
     width: 100%;
 
-    .sign-up-label {
+    .login-label {
       font-size: $font-small;
       margin-bottom: 8px;
     } 
@@ -44,22 +43,24 @@
       width: 100%;
     }
 
-    .sign-up-button {
+    .login-button {
       background-color: $sulu-green;
       border-bottom: 2px solid $grey;
       border-radius: 5px;
       color: $wild-sand;
       font-size: $font-small;
+      margin-top: 8px;
       padding: 8px 0;
     }
   }
 
-  .login {
+  .sign-up {
     border-radius: 5px;
     border: 2px solid $sulu-green;
     color: $sulu-green;
     font-size: $font-small;
     padding: 4px 0;
+    margin-top: 16px;
     width: 100%;
   }
 }

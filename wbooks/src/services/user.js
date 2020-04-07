@@ -13,3 +13,13 @@ export function userById(id) {
 export function createUser(body) {
     return wbooksApi.post('/users', body)
 }
+
+export function newSession(email, password) {
+    const body = {
+        session: {
+            email: email,
+            password: password
+        }
+    }
+    return wbooksApi.post('/users/sessions', body)
+}

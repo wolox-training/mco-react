@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { string } from 'prop-types';
+import { string } from 'prop-types'
 
 class InputForm extends Component {
   state = {
