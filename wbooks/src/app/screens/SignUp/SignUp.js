@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import logoWolox from './assets/LogoWolox.png';
 import InputForm from './components/InputForm';
 import { createUser } from '../../../services/user';
@@ -44,7 +45,9 @@ class SignUp extends Component {
           <InputForm label_name='Confirmación de Password' name='password_confirm' type='password' />
           <button className='sign-up-button' type='submit'>Sign Up</button>
         </form>
-        <button className='login'>Login</button>
+        <Link to='/'>
+          <button className='login'>Login</button>
+        </Link>
       </div>
     );
   }
